@@ -20,9 +20,10 @@ var client = new Twitter({
   access_token_secret: config.access_token_secret
 });
 
-var hashtags = '#Trump, #FeelTheBern';
+var hashtags = '#kittens, #puppies, #kitten, #puppy, #cat, #dog';
 
 client.stream('statuses/filter', {track: hashtags}, function(stream) {
+  console.log(stream)
   stream.on('data', function(tweet) {
     io.emit('newTweet', tweet);
   });

@@ -1,5 +1,6 @@
 body {
- background-color: rgb(95, 165, 218);
+ background-image: url('http://www.lancefarrow.ca/wp-content/uploads/2014/06/triangle-background-17.png');
+ background-size: cover;
 }
 #trump #sanders {
   float: right;
